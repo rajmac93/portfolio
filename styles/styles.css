@@ -30,6 +30,15 @@ html {
 p {
   color: var(--main-text-color);
 }
+.progress--bar {
+  height: 0.3rem;
+  background: var(--main-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 /* GENERAL */
 /* TRANSITION */
 a,
@@ -64,6 +73,7 @@ a:hover {
   text-underline-offset: 1rem;
   text-decoration-color: var(--main-color);
 }
+
 .logo {
   font-size: 2rem;
   display: flex;
@@ -161,10 +171,10 @@ a:hover {
 /* SECTIONS */
 section {
   padding-top: 4vh;
-  height: 96vh;
+  min-height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  /* min-height: fit-content; */
 }
 
 .section--container {
@@ -297,7 +307,6 @@ section {
   flex: 1;
   background: var(--white);
   border-radius: 2rem;
-  /* border: var(--main-text-color) 0.1rem solid; */
   text-align: center;
 }
 
@@ -414,8 +423,8 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
+  background: var(--white);
   height: 26vh;
-  margin: 0 1rem;
 }
 
 footer p {
