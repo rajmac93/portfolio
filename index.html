@@ -6,6 +6,7 @@
     <title>Maciej Rajtar Portfolio</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/mediaqueries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="background"></div>
@@ -85,7 +86,12 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      id="about"
+    >
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section--container">
@@ -140,7 +146,12 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      id="experience"
+    >
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience--details--container">
@@ -281,7 +292,12 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+    <section
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      id="projects"
+    >
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience--details--container">
@@ -428,7 +444,12 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact">
+    <section
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      id="contact"
+    >
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact--info--upper--container">
@@ -470,7 +491,11 @@
           rajmac93</a
         >
       </p>
-    </footer>
+    </footer=>
     <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
