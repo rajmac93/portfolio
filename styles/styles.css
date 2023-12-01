@@ -277,7 +277,6 @@ section {
 }
 
 .about--containers {
-  flex-wrap: wrap;
   gap: 2rem;
   margin: 2rem 0;
 }
